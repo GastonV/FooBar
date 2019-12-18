@@ -8,17 +8,18 @@ namespace FooBar
         {
             for (int i = 1; i <= 100; i++)
             {
-                if ((i % 3 ==0)&&(i%5==0))
+                if (i % 3 ==0)
                 {
-                    Console.WriteLine("FooBar");
-                }
-                if (i % 3 == 0)
-                {
-                    Console.WriteLine("Foo");
+                    if (i % 5 == 0)
+                    {
+                        Console.WriteLine("FooBar");
+                    }
+                    Console.WriteLine("Bar");
                 }
                 if (i % 5 == 0)
                 {
-                    Console.WriteLine("Bar");
+                    Console.WriteLine("Foo");
+                   
                 }
             }
         }
